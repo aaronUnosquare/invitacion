@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "TrajaBold";
+  src: url("../fonts/trajan_bold.ttf");
+}
+
+@font-face {
+  font-family: "CheetahKick";
+  src: url("../fonts/cheetah_kick.otf");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.gradient-button {
+  background-image: linear-gradient(#9d3bd6, #fd66e4);
+  border: 3px solid #612689;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+}
+
+.gradient-button:hover {
+  background-image: none;
+  /* Eliminar el gradiente en el hover */
+  background-color: #9d3bd6;
+  /* Cambiar el color de fondo en el hover */
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+/* contador */
+.cuenta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.simply-section>div {
+  min-width: 5rem;
+  max-width: 5rem;
+  min-height: 5rem;
+  max-height: 5rem;
+  /* border-radius: 50%; */
+  /* border: 2px solid #818779; */
+  text-align: center;
+  position: relative;
+}
+
+.simply-section {
+  width: 4rem;
+  height: 4rem;
+  /* border-radius: 50%;
+    background-color: #818779; */
+  background-image: url('../img/petalo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simply-amount {
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #6f0080;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.simply-word {
+  font-size: 2rem;
+  font-family: 'AdobeCleanLigth';
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* slider */
+.glide__arrow{
+  border: none !important;
+}
