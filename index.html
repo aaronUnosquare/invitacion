@@ -3,24 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="XV" AÑOS Renata />
-    <meta property="og:site_name" content="mis_xv_renata" />
-    <meta property="og:url" content="www.mis_xv_renata.com" />
-    <meta property="og:description" content="Me" encantaria que asistieras a mis fiesta de XV años. />
+    <meta property="og:title" content="XV AÑOS SOFIA" />
+    <meta property="og:site_name" content="mis_xv_sofia" />
+    <meta property="og:url" content="www.xvsofia.com.mx" />
+    <meta
+      property="og:description"
+      content="Me encantaria que asistieras a mis fiesta de XV años."
+    />
     <meta property="og:type" content="" />
-    <meta property="og:image" content=https://i.pinimg.com/736x/81/c8/04/81c8048d279e7b51a392a5b1fedc2178.jpg>
-    <title>Document</title>
+    <meta property="og:image"
+    content=https://i.pinimg.com/736x/81/c8/04/81c8048d279e7b51a392a5b1fedc2178.jpg>
+    <title>XV SOFIA</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_circle,pause_circle"
     />
     <link rel="stylesheet" href="assets/css/glide.core.css" />
     <link rel="stylesheet" href="assets/css/glide.theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="bg-[#34175e]">
+  <body class="bg-[#90043A]">
     <div class="h-full">
-      <div class="sm:hidden">
+      <div class="sm:hidden relative">
+        <!-- audio -->
+        <div class="fixed bottom-5 right-1 z-40">
+          <audio id="miAudio" controls class="hidden">
+            <source src="assets/audio/audio.mp3" type="audio/mpeg" />
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+          <div class="flex justify-center">
+            <span
+              class="material-symbols-outlined text-[3.5rem] text-white hover:cursor-pointer"
+              id="play-pausa"
+            >
+              play_circle
+            </span>
+          </div>
+        </div>
+
         <!-- pantalla-1 -->
         <div class="h-full">
           <main class="h-full w-full overflow-hidden">
@@ -30,109 +54,141 @@
               Tu navegador no soporta la etiqueta de video.
             </video>
           </main>
-          <audio id="miAudio" controls class="hidden">
-            <source src="assets/audio/audio.mp3" type="audio/mpeg" />
-            Tu navegador no soporta la etiqueta de audio.
-          </audio>
-          <div class="flex justify-center">
-            <span class="material-symbols-outlined text-[5rem] text-white hover:cursor-pointer" id="play-pausa">
-              play_pause
-            </span>
-          </div>
         </div>
 
         <!-- pantalla-2 -->
-        <div class="bg-[url('assets/img/bg-hoja.png')] bg-no-repeat bg-[size:100%_100%]">
-          <!-- flores -->
-          <div class="flex justify-center w-full">
-            <img src="assets/img/flores.png" alt="Flores" class="h-[6rem]" />
+        <div
+          class="bg-[url('assets/img/pantalla2/Fondo.webp')] bg-no-repeat bg-[size:100%_100%] min-h-[400px]"
+        >
+          <div class="absolute">
+            <img src="assets/img/pantalla2/persona_degradado.webp" />
           </div>
 
-          <!-- mensaje -->
-          <div class="flex justify-center text-center w-full">
-            <p class="text-[1rem] font-TrajaBold py-2 px-3 uppercase text-center text-white">
-              el alba con su suave luz, <br />
-              nos encontrará festejando <br />
-              el despertar de mi juventud. <br />
-              te invito a derrochar mil <br />
-              burbujas de felicidad y <br />
-              compartir conmigo una <br />
-              noche especial. <br />
-            </p>
-          </div>
-
-          <!-- mensaje 2 -->
-          <div class="flex justify-center w-full pt-5">
-            <img src="assets/img/conmigo.png" alt="Celebra Conmigo" class="h-[7rem]" />
-          </div>
-
-          <!-- calendario -->
           <div class="w-full">
-            <div class="flex justify-center">
-              <img src="assets/img/calendar.png" alt="Celebra Conmigo" class="h-[8rem]" />
-            </div>
-            <div class="relative">
-              <p class="text-[1.8rem] text-center text-white font-TrajaBold uppercase">
-                de marzo <br />
-                2024
-              </p>
-            </div>
-            <!-- contador -->
-            <div class="w-full">
-              <div class="cuenta h-[8rem]" id="cuenta"></div>
-            </div>
-            <div>
-              <div class="flex justify-center">
-                <img src="assets/img/flores.png" alt="Celebra Conmigo" class="h-[6rem]" />
-              </div>
-            </div>
+            <img
+              src="assets/img/pantalla2/Flor_arriba_dorada.webp"
+              class="w-[45%] m-auto"
+            />
           </div>
+
+          <img
+            src="assets/img/pantalla2/mensaje.webp"
+            class="py-2 px-3 mt-10"
+          />
+
+          <img
+            src="assets/img/pantalla2/celebra_conmigo.webp"
+            class="py-2 px-3 w-[90%] mt-5 m-auto"
+          />
+
+          <img src="assets/img/pantalla2/fecha.webp" class="mt-[2rem]" />
+
+          <div class="w-full mt-[2rem] relative">
+            <img
+              src="assets/img/pantalla2/adorno1.webp"
+              class="w-[15%] absolute top-0 left-0"
+            />
+            <img
+              src="assets/img/pantalla2/adorno2.webp"
+              class="w-[15%] absolute top-0 right-0"
+            />
+            <div class="cuenta h-[8rem]" id="cuenta"></div>
+          </div>
+
+          <img
+            src="assets/img/pantalla2/flores_bottom.webp"
+            class="mt-[3rem]"
+          />
         </div>
 
         <!-- pantalla-3 -->
-        <div class="bg-[url('assets/img/bg-p3.png')] bg-no-repeat bg-[size:100%]">
-          <!-- padres -->
-          <div class="flex justify-center w-full">
-            <img src="assets/img/padres.png" alt="Padres" class="h-[3rem]" />
+        <div
+          class="bg-[url('assets/img/pantalla2/Fondo.webp')] bg-no-repeat bg-[size:100%_100%] min-h-[1000px] relative pb-[5rem]"
+        >
+          <div class="absolute h-full w-full">
+            <img src="assets/img/pantalla3/fotos_fondo.webp" class="h-full" />
           </div>
-          <!-- madre -->
-          <div class="flex justify-center mt-[2rem] w-full">
-            <img src="assets/img/name3.png" alt="Martha Martínez Gutiérrez" class="h-[6rem]" />
-          </div>
-          <!-- padre -->
-          <div class="flex justify-center w-full">
-            <img src="assets/img/name4.png" alt="Oscar René Gómez Canul" class="h-[6rem]" />
-          </div>
-          <!-- division1 -->
-          <div class="flex justify-center w-full mt-5">
-            <img src="assets/img/linea.png" />
-          </div>
-          <!-- padrinos -->
-          <div class="flex justify-center mt-5 w-full">
-            <img src="assets/img/padrinos.png" alt="Padrinos" class="h-[4rem]" />
-          </div>
-          <!-- name1 -->
-          <div class="flex justify-center mt-5 w-full">
-            <img src="assets/img/name1.png" alt="Deysi Guadalupe Córdova Hernandez" class="h-[8rem]" />
-          </div>
-          <!-- name2 -->
-          <div class="flex justify-center mt-5 w-full">
-            <img src="assets/img/name2.png" alt="Deysi Guadalupe Córdova Hernandez" class="h-[7rem]" />
-          </div>
-          <!-- division2 -->
-          <div class="flex justify-center w-full mt-5">
-            <img src="assets/img/linea.png" />
-          </div>
-          <!-- division3 -->
-          <div class="flex justify-center w-full mt-5">
-            <img src="assets/img/linea-final.png" />
+
+          <img
+            src="assets/img/pantalla3/adorno1.webp"
+            class="absolute top-0 w-[20%]"
+          />
+
+          <img
+            src="assets/img/pantalla3/flores_doradas_arriba.webp"
+            class="absolute top-0 right-0 w-[30%]"
+          />
+
+          <div class="w-full relative pt-[5rem]">
+            <img
+              src="assets/img/pantalla3/padres.webp"
+              class="w-[80%] mb-[2rem] m-auto"
+            />
+
+            <img
+              src="assets/img/pantalla3/marco_antonio_Lopez_alonso.webp"
+              class="w-[50%] m-auto mb-[2rem]"
+            />
+
+            <img
+              src="assets/img/pantalla3/glendi _Rodriguez_Osorio.webp"
+              class="w-[50%] m-auto mb-[2rem]"
+            />
+
+            <img
+              src="assets/img/pantalla3/padrinos_gracias.webp"
+              class="w-[90%] mb-[2rem] m-auto"
+            />
+
+            <img
+              src="assets/img/pantalla3/franklin_de_la_cruz_ortiz.webp"
+              class="w-[50%] m-auto mb-[2rem]"
+            />
+
+            <img
+              src="assets/img/pantalla3/maria_luisa_rodriguez_osorio.webp"
+              class="w-[50%] m-auto mb-[2rem]"
+            />
+
+            <img
+              src="assets/img/pantalla3/mis_padrinos_de_brindis.webp"
+              class="w-[90%] mb-[2rem] m-auto"
+            />
+
+            <img
+              src="assets/img/pantalla3/daniel_bautista_cordova.webp"
+              class="w-[50%] m-auto mb-[2rem]"
+            />
+
+            <img
+              src="assets/img/pantalla3/leydi_diana_lopez_cordova.webp"
+              class="w-[50%] m-auto"
+            />
+
+            <img
+              src="assets/img/pantalla3/flores_doradas_abajo.webp"
+              class="absolute bottom-[-5rem] left-0 w-[45%]"
+            />
+            <img
+              src="assets/img/pantalla3/adorno2.webp"
+              class="absolute bottom-[-5rem] right-0 w-[25%]"
+            />
           </div>
         </div>
 
-        <!-- pantalla-4 -->
+        <!-- pantalla sesion -->
         <div class="w-full relative">
-          <div class="flex justify-center w-full absolute z-10 top-[77%]">
-            <img src="assets/img/logo2.png" class="h-[10rem]" />
+          <div
+            class="bg-[url('assets/img/pantallasesion/degradado.webp')] bg-no-repeat bg-[size:100%_100%] absolute z-20 h-full w-full"
+          ></div>
+
+          <div
+            class="flex justify-center w-full absolute z-30 bottom-0 pb-[3rem]"
+          >
+            <img
+              src="assets/img/pantallasesion/logo.webp"
+              class="w-full h-auto"
+            />
           </div>
           <!-- slider -->
           <div class="w-full">
@@ -140,18 +196,63 @@
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
-                    <img src="assets/img/slider1.png" alt="Fotografia" class="h-100" />
+                    <img
+                      src="assets/img/pantallasesion/foto1.webp"
+                      alt="Fotografia"
+                      class="h-100"
+                    />
                   </li>
                   <li class="glide__slide">
-                    <img src="assets/img/slider2.png" alt="Fotografia" class="h-100" />
+                    <img
+                      src="assets/img/pantallasesion/foto2.webp"
+                      alt="Fotografia"
+                      class="h-100"
+                    />
+                  </li>
+                  <li class="glide__slide">
+                    <img
+                      src="assets/img/pantallasesion/foto3.webp"
+                      alt="Fotografia"
+                      class="h-100"
+                    />
+                  </li>
+                  <li class="glide__slide">
+                    <img
+                      src="assets/img/pantallasesion/foto4.webp"
+                      alt="Fotografia"
+                      class="h-100"
+                    />
+                  </li>
+                  <li class="glide__slide">
+                    <img
+                      src="assets/img/pantallasesion/foto5.webp"
+                      alt="Fotografia"
+                      class="h-100"
+                    />
+                  </li>
+                  <li class="glide__slide">
+                    <img
+                      src="assets/img/pantallasesion/foto6.webp"
+                      alt="Fotografia"
+                      class="h-100"
+                    />
                   </li>
                 </ul>
               </div>
-              <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <div
+                class="glide__arrows absolute z-40 top-[50%] left-0 right-0"
+                data-glide-el="controls"
+              >
+                <button
+                  class="glide__arrow glide__arrow--left left-0"
+                  data-glide-dir="<"
+                >
                   <img src="assets/img/flechaizquierda.png" class="h-[3rem]" />
                 </button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <button
+                  class="glide__arrow glide__arrow--right right-0"
+                  data-glide-dir=">"
+                >
                   <img src="assets/img/flechaderecha.png" class="h-[3rem]" />
                 </button>
               </div>
@@ -159,159 +260,176 @@
           </div>
         </div>
 
-        <!-- pantalla 5 -->
-        <div class="w-full bg-[url('assets/img/bg-p5.png')] bg-no-repeat bg-[size:100%]">
-          <!-- linea -->
-          <div class="w-full">
-            <img src="assets/img/linea-final.png" />
-          </div>
-          <!-- iglesia -->
-          <div class="flex justify-center pt-[5rem]">
-            <img src="assets/img/iglesia.png" alt="Iglesia" class="h-[13rem]" />
-          </div>
-          <!-- accion-gracia -->
-          <div class="flex justify-center">
-            <img src="assets/img/accion-gracias.png" alt="Iglesia" class="h-[7rem]" />
-          </div>
-          <!-- ubicacion -->
-          <div class="flex justify-center mt-5">
-            <a
-              href="https://www.google.com/maps/place/Parroquia+La+Sagrada+Familia/@18.0219162,-92.9003598,15z/data=!4m6!3m5!1s0x85edd87e8cb0c073:0x9bfe38a8dc4413dd!8m2!3d18.0219162!4d-92.9003598!16s%2Fg%2F12qgds2zj?hl=es-MX&entry=ttu"
-              class="flex justify-center items-center gradient-button font-TrajaBold uppercase px-[2rem] py-[10px]"
-            >
-              <span class="material-symbols-outlined"> location_on </span>
-              <span>ver ubicación</span>
-            </a>
-          </div>
+        <!-- pantalla 4 -->
+        <div
+          class="w-full bg-[url('assets/img/pantalla2/Fondo.webp')] bg-no-repeat bg-cover relative pt-[3rem]"
+        >
+          <img
+            src="assets/img/pantalla4/flores_arriba.webp"
+            class="absolute top-0 w-[20%]"
+          />
 
-          <div class="flex justify-center mt-5">
-            <img src="assets/img/linea.png" class="" />
-          </div>
+          <img
+            src="assets/img/pantalla3/flores_doradas_arriba.webp"
+            class="absolute top-0 right-0 w-[30%]"
+          />
 
-          <!-- salon-hora -->
-          <div class="flex justify-center">
-            <img src="assets/img/salon.png" alt="Salon" class="h-[8rem]" />
-          </div>
+          <img
+            src="assets/img/pantalla4/misa.webp"
+            class="w-[50%] mb-3 m-auto"
+          />
 
-          <!-- recepcion -->
-          <div class="flex justify-center mt-[1rem]">
-            <a
-              href="https://www.google.com/maps/place/Salones+Candiles+-+Blanco+y+Negro,+Av.+27+de+Febrero+1723,+Atasta+de+Serra,+86100+Villahermosa,+Tab./data=!4m2!3m1!1s0x85edd82a791d5713:0xb758b43f3c43236e?utm_source=mstt_1&entry=gps&lucs=,47075915&g_ep=CAESCjExLjExNC4xMDQYACDXggMqCSw0NzA3NTkxNUICTVg%3D"
-              class="flex justify-center items-center gradient-button font-TrajaBold uppercase px-[20px] py-[10px]"
-            >
-              <span class="material-symbols-outlined"> location_on </span>
-              <span>recepción</span>
-            </a>
-          </div>
+          <img
+            src="assets/img/pantalla4/accion_gracias.webp"
+            class="w-[95%] m-auto mb-4"
+          />
 
-          <div class="flex justify-center mt-5">
-            <img src="assets/img/linea.png" class="" />
-          </div>
+          <img
+            src="assets/img/pantalla4/ubicacion_misa.webp"
+            class="w-[70%] m-auto mb-[3rem]"
+          />
 
-          <div class="flex justify-center">
-            <img src="assets/img/mesa.png" alt="Mesa de Regalos" class="h-[14rem]" />
-          </div>
+          <img
+            src="assets/img/pantalla4/ciudad_colonia_misa.webp"
+            class="w-[70%] m-auto mb-[2rem]"
+          />
 
-          <div class="flex justify-center mt-5">
-            <img src="assets/img/linea.png" class="" />
-          </div>
+          <a href="https://maps.app.goo.gl/N9dyAj8nY13CSC2G8" target="_blank">
+            <img
+              src="assets/img/pantalla4/boton_direccion.webp"
+              class="w-[50%] m-auto mb-4"
+            />
+          </a>
 
-          <div class="mt-5">
-            <p class="text-[1rem] text-center text-white font-TrajaBold uppercase">
-              los momentos felices de la <br />
-              vida se tornan gratos <br />
-              cuando tenemos la suerte <br />
-              de compartirlos con los<br />
-              familiares y amigos más <br />
-              queridos
-            </p>
-          </div>
+          <img
+            src="assets/img/pantalla4/horario_misa.webp"
+            class="w-full m-auto mb-[2rem]"
+          />
 
-          <div class="flex justify-center mt-5">
-            <a
-              href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51387593"
-              target="_blank"
-              class="gradient-button font-TrajaBold uppercase px-[5rem] py-[10px]"
-            >
-              <span>ver mesa</span>
-            </a>
-          </div>
+          <img
+            src="assets/img/pantalla4/salon_fiesta.webp"
+            class="w-[80%] mb-3 m-auto"
+          />
 
-          <!-- mesa regalo -->
-          <div class="mt-5">
-            <div class="flex justify-center">
-              <img src="assets/img/liverpool.png" alt="Liverpool" class="h-[5rem]" />
-            </div>
-            <p class="text-[1.2rem] text-white uppercase text-center font-TrajaBold">
-              Número del evento: <br />
-              <span class="text-[#fe66e5]">51387593</span>
-            </p>
-          </div>
+          <img
+            src="assets/img/pantalla4/real_campestre.webp"
+            class="w-[85%] m-auto mb-5"
+          />
 
-          <div class="flex justify-center mt-[3rem]">
-            <img src="assets/img/linea.png" />
-          </div>
+          <img
+            src="assets/img/pantalla4/ubicacion_fiesta.webp"
+            class="w-[55%] m-auto mb-[1.5rem]"
+          />
 
-          <!-- lluvia sobres -->
-          <div class="flex justify-center mt-5">
-            <img src="assets/img/sobre.png" alt="Sobre" class="h-[10rem]" />
-          </div>
-          <div class="flex justify-center">
-            <img src="assets/img/lluvia-sobre.png" alt="Sobre" class="h-[10rem]" />
-          </div>
+          <a href="https://maps.app.goo.gl/bhMMf9zLLsxsJsMk9" target="_blank">
+            <img
+              src="assets/img/pantalla4/boton_direccion.webp"
+              class="w-[50%] m-auto mb-4"
+            />
+          </a>
 
-          <div class="flex justify-center mt-[3rem]">
-            <img src="assets/img/linea.png" />
-          </div>
+          <img
+            src="assets/img/pantalla4/recepcion.webp"
+            class="w-full m-auto"
+          />
 
-          <div class="mt-[2rem]">
-            <p class="text-[1rem] text-center text-white font-TrajaBold uppercase">
-              la famosa lluvia de sobres <br />
-              poco conocida para <br />
-              algunos, significa que <br />
-              como sugerencia de regalo, <br />
-              el día de tus 15 años <br />
-              prefires que tus invitados <br />
-              te den dinero en efectivo
-            </p>
-          </div>
+          <div class="p-[2.5rem]"></div>
 
-          <div class="flex justify-center mt-[2rem]">
-            <img src="assets/img/linea.png" />
-          </div>
+          <img
+            src="assets/img/pantalla4/flores_abajo.webp"
+            class="w-[35%] bg-contain bg-no-repeat absolute bottom-0 left-0"
+          />
 
-          <div class="flex justify-center mt-5">
-            <img src="assets/img/confirmar.png" alt="Confirmar Asistencia" class="h-[6rem]" />
-          </div>
-
-          <div class="flex justify-center mt-5">
-            <a
-              href="https://wa.me/9932591312?text=Hola Rennata. Asistiré a tu fiesta."
-              class="flex justify-center items-center gradient-button font-TrajaBold uppercase px-[20px] py-[10px]"
-            >
-              <img src="assets/img/whatsapp.png" alt="Confirmar" class="h-[2rem] mx-2" />
-              <span>confirmar</span>
-            </a>
-          </div>
+          <img
+            src="assets/img/pantalla4/adorno2.webp"
+            class="w-[25%] bg-contain bg-no-repeat absolute bottom-0 right-0"
+          />
         </div>
 
-        <!-- pantalla final -->
-        <div class="bg-[url('assets/img/bg-petalos.png')] bg-no-repet bg-cover">
-          <div class="my-5">
-            <p class="text-[1rem] text-center text-white font-TrajaBold uppercase">
-              "una vez confirmada la <br />
-              asistencia se te agregara a <br />
-              la lista"
-            </p>
-          </div>
-          <div class="flex justify-center">
-            <img src="assets/img/corona.png" alt="Corona" class="h-[15rem]" />
-          </div>
+        <!-- pantalla 5 -->
+        <div
+          class="w-full bg-[url('assets/img/pantalla2/Fondo.webp')] bg-no-repeat bg-cover relative pt-[4rem]"
+        >
+          <img
+            src="assets/img/pantalla5/adorno_arriba.webp"
+            class="absolute top-1 w-[40%]"
+          />
+
+          <img
+            src="assets/img/pantalla3/flores_doradas_arriba.webp"
+            class="absolute top-0 right-0 w-[30%]"
+          />
+
+          <img
+            src="assets/img/pantalla5/iconos_regalos.webp"
+            class="w-[90%] mb-3 m-auto"
+          />
+
+          <img
+            src="assets/img/pantalla5/mesa_regalos.webp"
+            class="w-[70%] m-auto mb-4"
+          />
+
+          <img
+            src="assets/img/pantalla5/evento.webp"
+            class="w-[90%] m-auto mb-[2rem]"
+          />
+
+          <img
+            src="assets/img/pantalla5/iconos_sobres.webp"
+            class="w-[70%] m-auto mb-1"
+          />
+
+          <img
+            src="assets/img/pantalla5/lluvia_sobres.webp"
+            class="w-[70%] m-auto mb-[1rem]"
+          />
+
+          <img
+            src="assets/img/pantalla5/cuenta.webp"
+            class="w-[85%] m-auto mb-[1rem]"
+          />
+
+          <img
+            src="assets/img/pantalla5/numero_tarjeta.webp"
+            class="w-[90%] m-auto mb-[3rem]"
+          />
+
+          <img
+            src="assets/img/pantalla5/confirma_asistencia.webp"
+            class="w-[94%] m-auto mb-[1.5rem]"
+          />
+
+          <a href="/">
+            <img
+              src="assets/img/pantalla5/boton_confirmar.webp"
+              class="w-[70%] m-auto mb-4"
+            />
+          </a>
+
+          <img
+            src="assets/img/pantalla5/mensaje_confirmacion.webp"
+            class="w-[75%] m-auto mb-[1.5rem]"
+          />
+
+          <div class="p-[2.5rem]"></div>
+
+          <img
+            src="assets/img/pantalla4/flores_abajo.webp"
+            class="w-[35%] bg-contain bg-no-repeat absolute bottom-0 left-0"
+          />
+
+          <img
+            src="assets/img/pantalla4/adorno2.webp"
+            class="w-[25%] bg-contain bg-no-repeat absolute bottom-0 right-0"
+          />
         </div>
       </div>
 
       <div class="sm:block hidden w-full h-full">
-        <div class="w-full h-full bg-[url('assets/img/desktop.png')] bg-no-repeat bg-contain bg-center"></div>
+        <div
+          class="w-full h-full bg-[url('assets/img/desktop.png')] bg-no-repeat bg-contain bg-center"
+        ></div>
       </div>
     </div>
 
