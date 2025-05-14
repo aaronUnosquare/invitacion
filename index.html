@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="XV AÑOS SOFIA" />
     <meta property="og:site_name" content="mis_xv_sofia" />
-    <meta property="og:url" content="www.xvsofia.com.mx" />
+    <meta property="og:url" content="https://www.xvsofia.com.mx/" />
     <meta
       property="og:description"
-      content="Me encantaria que asistieras a mis fiesta de XV años."
+      content="Me encantaria que asistieras a mi fiesta de XV años."
     />
     <meta property="og:type" content="" />
-    <meta property="og:image"
-    content=https://i.pinimg.com/736x/81/c8/04/81c8048d279e7b51a392a5b1fedc2178.jpg>
+    <meta
+      property="og:image"
+      content="https://xvsofia.com.mx/assets/img/ogimage.webp"
+    />
     <title>XV SOFIA</title>
     <link
       rel="stylesheet"
@@ -27,6 +29,25 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="bg-[#90043A]">
+    <!-- Página de carga -->
+    <!-- <div id="loading-page" class="loading">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="spinner"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+        />
+      </svg>
+      <p>Cargando...</p>
+    </div> -->
+
     <div class="h-full">
       <div class="sm:hidden relative">
         <!-- audio -->
@@ -61,36 +82,48 @@
           class="bg-[url('assets/img/pantalla2/Fondo.webp')] bg-no-repeat bg-[size:100%_100%] min-h-[400px]"
         >
           <div class="absolute">
-            <img src="assets/img/pantalla2/persona_degradado.webp" />
+            <img
+              src="assets/img/pantalla2/persona_degradado.webp"
+              loading="lazy"
+            />
           </div>
 
           <div class="w-full">
             <img
-              src="assets/img/pantalla2/Flor_arriba_dorada.webp"
+              src="assets/img/pantalla2/flor_arriba_dorada.webp"
               class="w-[45%] m-auto"
+              loading="lazy"
             />
           </div>
 
           <img
             src="assets/img/pantalla2/mensaje.webp"
             class="py-2 px-3 mt-10"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla2/celebra_conmigo.webp"
             class="py-2 px-3 w-[90%] mt-5 m-auto"
+            loading="lazy"
           />
 
-          <img src="assets/img/pantalla2/fecha.webp" class="mt-[2rem]" />
+          <img
+            src="assets/img/pantalla2/fecha.webp"
+            class="mt-[2rem]"
+            loading="lazy"
+          />
 
           <div class="w-full mt-[2rem] relative">
             <img
               src="assets/img/pantalla2/adorno1.webp"
               class="w-[15%] absolute top-0 left-0"
+              loading="lazy"
             />
             <img
               src="assets/img/pantalla2/adorno2.webp"
               class="w-[15%] absolute top-0 right-0"
+              loading="lazy"
             />
             <div class="cuenta h-[8rem]" id="cuenta"></div>
           </div>
@@ -98,6 +131,7 @@
           <img
             src="assets/img/pantalla2/flores_bottom.webp"
             class="mt-[3rem]"
+            loading="lazy"
           />
         </div>
 
@@ -106,72 +140,89 @@
           class="bg-[url('assets/img/pantalla2/Fondo.webp')] bg-no-repeat bg-[size:100%_100%] min-h-[1000px] relative pb-[5rem]"
         >
           <div class="absolute h-full w-full">
-            <img src="assets/img/pantalla3/fotos_fondo.webp" class="h-full" />
+            <img
+              src="assets/img/pantalla3/fotos_fondo.webp"
+              class="h-full"
+              loading="lazy"
+            />
           </div>
 
           <img
             src="assets/img/pantalla3/adorno1.webp"
             class="absolute top-0 w-[20%]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla3/flores_doradas_arriba.webp"
             class="absolute top-0 right-0 w-[30%]"
+            loading="lazy"
           />
 
           <div class="w-full relative pt-[5rem]">
             <img
               src="assets/img/pantalla3/padres.webp"
               class="w-[80%] mb-[2rem] m-auto"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/marco_antonio_Lopez_alonso.webp"
               class="w-[50%] m-auto mb-[2rem]"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/glendi _Rodriguez_Osorio.webp"
               class="w-[50%] m-auto mb-[2rem]"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/padrinos_gracias.webp"
               class="w-[90%] mb-[2rem] m-auto"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/franklin_de_la_cruz_ortiz.webp"
               class="w-[50%] m-auto mb-[2rem]"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/maria_luisa_rodriguez_osorio.webp"
               class="w-[50%] m-auto mb-[2rem]"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/mis_padrinos_de_brindis.webp"
               class="w-[90%] mb-[2rem] m-auto"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/daniel_bautista_cordova.webp"
               class="w-[50%] m-auto mb-[2rem]"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/leydi_diana_lopez_cordova.webp"
               class="w-[50%] m-auto"
+              loading="lazy"
             />
 
             <img
               src="assets/img/pantalla3/flores_doradas_abajo.webp"
               class="absolute bottom-[-5rem] left-0 w-[45%]"
+              loading="lazy"
             />
             <img
               src="assets/img/pantalla3/adorno2.webp"
               class="absolute bottom-[-5rem] right-0 w-[25%]"
+              loading="lazy"
             />
           </div>
         </div>
@@ -188,6 +239,7 @@
             <img
               src="assets/img/pantallasesion/logo.webp"
               class="w-full h-auto"
+              loading="lazy"
             />
           </div>
           <!-- slider -->
@@ -200,6 +252,7 @@
                       src="assets/img/pantallasesion/foto1.webp"
                       alt="Fotografia"
                       class="h-100"
+                      loading="lazy"
                     />
                   </li>
                   <li class="glide__slide">
@@ -207,6 +260,7 @@
                       src="assets/img/pantallasesion/foto2.webp"
                       alt="Fotografia"
                       class="h-100"
+                      loading="lazy"
                     />
                   </li>
                   <li class="glide__slide">
@@ -214,6 +268,7 @@
                       src="assets/img/pantallasesion/foto3.webp"
                       alt="Fotografia"
                       class="h-100"
+                      loading="lazy"
                     />
                   </li>
                   <li class="glide__slide">
@@ -221,6 +276,7 @@
                       src="assets/img/pantallasesion/foto4.webp"
                       alt="Fotografia"
                       class="h-100"
+                      loading="lazy"
                     />
                   </li>
                   <li class="glide__slide">
@@ -228,6 +284,7 @@
                       src="assets/img/pantallasesion/foto5.webp"
                       alt="Fotografia"
                       class="h-100"
+                      loading="lazy"
                     />
                   </li>
                   <li class="glide__slide">
@@ -235,6 +292,7 @@
                       src="assets/img/pantallasesion/foto6.webp"
                       alt="Fotografia"
                       class="h-100"
+                      loading="lazy"
                     />
                   </li>
                 </ul>
@@ -247,13 +305,21 @@
                   class="glide__arrow glide__arrow--left left-0"
                   data-glide-dir="<"
                 >
-                  <img src="assets/img/flechaizquierda.png" class="h-[3rem]" />
+                  <img
+                    src="assets/img/flechaizquierda.png"
+                    class="h-[3rem]"
+                    loading="lazy"
+                  />
                 </button>
                 <button
                   class="glide__arrow glide__arrow--right right-0"
                   data-glide-dir=">"
                 >
-                  <img src="assets/img/flechaderecha.png" class="h-[3rem]" />
+                  <img
+                    src="assets/img/flechaderecha.png"
+                    class="h-[3rem]"
+                    loading="lazy"
+                  />
                 </button>
               </div>
             </div>
@@ -267,70 +333,83 @@
           <img
             src="assets/img/pantalla4/flores_arriba.webp"
             class="absolute top-0 w-[20%]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla3/flores_doradas_arriba.webp"
             class="absolute top-0 right-0 w-[30%]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/misa.webp"
             class="w-[50%] mb-3 m-auto"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/accion_gracias.webp"
             class="w-[95%] m-auto mb-4"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/ubicacion_misa.webp"
             class="w-[70%] m-auto mb-[3rem]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/ciudad_colonia_misa.webp"
             class="w-[70%] m-auto mb-[2rem]"
+            loading="lazy"
           />
 
           <a href="https://maps.app.goo.gl/N9dyAj8nY13CSC2G8" target="_blank">
             <img
               src="assets/img/pantalla4/boton_direccion.webp"
               class="w-[50%] m-auto mb-4"
+              loading="lazy"
             />
           </a>
 
           <img
             src="assets/img/pantalla4/horario_misa.webp"
             class="w-full m-auto mb-[2rem]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/salon_fiesta.webp"
             class="w-[80%] mb-3 m-auto"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/real_campestre.webp"
             class="w-[85%] m-auto mb-5"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/ubicacion_fiesta.webp"
             class="w-[55%] m-auto mb-[1.5rem]"
+            loading="lazy"
           />
 
           <a href="https://maps.app.goo.gl/bhMMf9zLLsxsJsMk9" target="_blank">
             <img
               src="assets/img/pantalla4/boton_direccion.webp"
               class="w-[50%] m-auto mb-4"
+              loading="lazy"
             />
           </a>
 
           <img
             src="assets/img/pantalla4/recepcion.webp"
             class="w-full m-auto"
+            loading="lazy"
           />
 
           <div class="p-[2.5rem]"></div>
@@ -338,11 +417,13 @@
           <img
             src="assets/img/pantalla4/flores_abajo.webp"
             class="w-[35%] bg-contain bg-no-repeat absolute bottom-0 left-0"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/adorno2.webp"
             class="w-[25%] bg-contain bg-no-repeat absolute bottom-0 right-0"
+            loading="lazy"
           />
         </div>
 
@@ -353,51 +434,61 @@
           <img
             src="assets/img/pantalla5/adorno_arriba.webp"
             class="absolute top-1 w-[40%]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla3/flores_doradas_arriba.webp"
             class="absolute top-0 right-0 w-[30%]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/iconos_regalos.webp"
             class="w-[90%] mb-3 m-auto"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/mesa_regalos.webp"
             class="w-[70%] m-auto mb-4"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/evento.webp"
             class="w-[90%] m-auto mb-[2rem]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/iconos_sobres.webp"
             class="w-[70%] m-auto mb-1"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/lluvia_sobres.webp"
             class="w-[70%] m-auto mb-[1rem]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/cuenta.webp"
             class="w-[85%] m-auto mb-[1rem]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/numero_tarjeta.webp"
             class="w-[90%] m-auto mb-[3rem]"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla5/confirma_asistencia.webp"
             class="w-[94%] m-auto mb-[1.5rem]"
+            loading="lazy"
           />
 
           <a
@@ -407,12 +498,14 @@
             <img
               src="assets/img/pantalla5/boton_confirmar.webp"
               class="w-[70%] m-auto mb-4"
+              loading="lazy"
             />
           </a>
 
           <img
             src="assets/img/pantalla5/mensaje_confirmacion.webp"
             class="w-[75%] m-auto mb-[1.5rem]"
+            loading="lazy"
           />
 
           <div class="p-[2.5rem]"></div>
@@ -420,18 +513,20 @@
           <img
             src="assets/img/pantalla4/flores_abajo.webp"
             class="w-[35%] bg-contain bg-no-repeat absolute bottom-0 left-0"
+            loading="lazy"
           />
 
           <img
             src="assets/img/pantalla4/adorno2.webp"
             class="w-[25%] bg-contain bg-no-repeat absolute bottom-0 right-0"
+            loading="lazy"
           />
         </div>
       </div>
 
       <div class="sm:block hidden w-full h-full">
         <div
-          class="w-full h-full bg-[url('assets/img/desktop.png')] bg-no-repeat bg-contain bg-center"
+          class="w-full h-full bg-[url('assets/img/image_desktop.webp')] bg-no-repeat bg-contain bg-center"
         ></div>
       </div>
     </div>
