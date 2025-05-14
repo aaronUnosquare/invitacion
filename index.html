@@ -20,17 +20,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_circle,pause_circle"
-    />
     <link rel="stylesheet" href="assets/css/glide.core.css" />
     <link rel="stylesheet" href="assets/css/glide.theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="bg-[#90043A]">
     <!-- Página de carga -->
-    <!-- <div id="loading-page" class="loading">
+    <div id="loading-page" class="loading">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -46,9 +42,9 @@
         />
       </svg>
       <p>Cargando...</p>
-    </div> -->
+    </div>
 
-    <div class="h-full">
+    <div id="main-content" class="content-hidden">
       <div class="sm:hidden relative">
         <!-- audio -->
         <div class="fixed bottom-5 right-1 z-40">
@@ -58,10 +54,35 @@
           </audio>
           <div class="flex justify-center">
             <span
-              class="material-symbols-outlined text-[3.5rem] text-white hover:cursor-pointer"
+              class="material-symbols-outlined text-white hover:cursor-pointer"
               id="play-pausa"
             >
-              play_circle
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-12 play"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-12 pause"
+                style="display: none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM9 8.25a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 0 0 .75-.75V9a.75.75 0 0 0-.75-.75H9Zm5.25 0a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 0 0 .75-.75V9a.75.75 0 0 0-.75-.75h-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </span>
           </div>
         </div>
@@ -69,11 +90,39 @@
         <!-- pantalla-1 -->
         <div class="h-full">
           <main class="h-full w-full overflow-hidden">
-            <!-- <img src="assets/img/intro.gif" alt="Renata" class="h-auto w-full"> -->
-            <video autoplay muted playsinline loop class="w-full h-full">
+            <!-- <img
+              src="assets/img/poster.webp"
+              alt="Renata"
+              class="h-auto w-full"
+            /> -->
+            <div style="padding: 177.78% 0 0 0; position: relative">
+              <iframe
+                src="https://player.vimeo.com/video/1084313035?h=367b8d81ba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                title="intro"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <!-- <video
+              autoplay
+              muted
+              playsinline
+              loop
+              class="w-full h-full"
+              poster="assets/img/poster.webp"
+            >
               <source src="assets/video/intro.mp4" type="video/mp4" />
+              <source src="assets/video/intro.mov" type="video/mp4" />
               Tu navegador no soporta la etiqueta de video.
-            </video>
+            </video> -->
           </main>
         </div>
 
@@ -450,7 +499,7 @@
           />
 
           <img
-            src="assets/img/pantalla5/mesa_regalos.webp"
+            src="assets/img/pantalla5/mesa_regalos_liverpool.webp"
             class="w-[70%] m-auto mb-4"
             loading="lazy"
           />
